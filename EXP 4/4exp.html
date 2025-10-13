@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Examples</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        p::first-letter {
+            font-size: 24px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Element Selector Example</h1>
+    <p>This paragraph uses element selector.</p>
+
+    <p id="unique">This paragraph uses ID selector.</p>
+
+    <p class="highlight">This paragraph uses class selector.</p>
+
+    <p class="highlight">This paragraph also uses class selector.</p>
+
+    <div>Group Selector Example</div>
+    <p>Group Selector Example</p>
+
+    <section>Universal Selector Example</section>
+
+    <div class="parent">
+        <p>Child paragraph inside a parent div (descendant)</p>
+        <p class="child">Direct child paragraph (child combinator)</p>
+        <h2>Heading after paragraph (adjacent sibling)</h2>
+        <p>Another paragraph (general sibling)</p>
+    </div>
+
+    <a href="#">Hover over me (pseudo-class)</a>
+
+    <input type="text" placeholder="Text input">
+    <input type="password" placeholder="Password input">
+    <input type="submit" value="Submit">
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tilted Background Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            min-height: 200vh; /* ensures enough scroll */
+            font-family: Arial, sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 50%; 
+            left: 50%;
+            width: 500px; 
+            height: 500px;
+            background-image: url('https://via.placeholder.com/500'); /* replace with your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translate(-50%, -50%) rotate(-15deg); 
+            z-index: -1; /* behind content */
+        }
+
+        h1, p {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tilted Fixed Background Example</h1>
+    <p>Scroll down to see the background remain in place.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia.</p>
+    <p>Keep scrolling to see the effect!</p>
+</body>
+</html>

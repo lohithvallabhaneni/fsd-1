@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors and Color References</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        h1 { color: orange; text-align: center; }
+        a:hover { color: red; text-decoration: underline; }
+        p::first-letter { font-size: 24px; font-weight: bold; }
+        .inline-color { color: orange; background-color: lightgray; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors and Color References</h1>
+    <p>This paragraph uses element selector.</p>
+    <p id="unique">This paragraph uses ID selector.</p>
+    <p class="highlight">This paragraph uses class selector.</p>
+    <p class="highlight">Another paragraph using class selector.</p>
+    <div>Group Selector Example</div>
+    <p>Group Selector Example</p>
+    <section>Universal Selector Example</section>
+    <div class="parent">
+        <p>Child paragraph inside parent div (descendant)</p>
+        <p class="child">Direct child paragraph (child combinator)</p>
+        <h2>Heading after paragraph (adjacent sibling)</h2>
+        <p>Another paragraph (general sibling)</p>
+    </div>
+    <a href="#">Hover over me (pseudo-class)</a>
+    <p class="inline-color">Inline style colors (orange text, lightgray background)</p>
+    <p class="name-color">Color name (red)</p>
+    <p class="hex-color">Hexadecimal color (#00FF00)</p>
+    <p class="rgb-color">RGB color (rgb(0, 0, 255))</p>
+    <p class="rgba-color">RGBA color (rgba(255, 0, 0, 0.5))</p>
+    <p class="hsl-color">HSL color (hsl(120, 100%, 50%))</p>
+    <p class="hsla-color">HSLA color (hsla(240, 100%, 50%, 0.3))</p>
+    <input type="text" placeholder="Text input">
+    <input type="password" placeholder="Password input">
+    <input type="submit" value="Submit">
+</body>
+</html>
